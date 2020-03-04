@@ -1,0 +1,4 @@
+${PODS_ROOT}/Target Support Files/Pods-Flickr_PS/Pods-Flickr_PS-frameworks.sh
+${BUILT_PRODUCTS_DIR}/MJRefresh/MJRefresh.framework
+${BUILT_PRODUCTS_DIR}/SDWebImage/SDWebImage.framework
+${BUILT_PRODUCTS_DIR}/objectiveflickr/objectiveflickr.framework

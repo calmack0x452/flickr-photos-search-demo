@@ -1,0 +1,26 @@
+PODS:
+  - MJRefresh (3.3.1)
+  - objectiveflickr (2.0.4)
+  - SDWebImage (5.5.2):
+    - SDWebImage/Core (= 5.5.2)
+  - SDWebImage/Core (5.5.2)
+
+DEPENDENCIES:
+  - MJRefresh
+  - objectiveflickr
+  - SDWebImage (~> 5.0)
+
+SPEC REPOS:
+  trunk:
+    - MJRefresh
+    - objectiveflickr
+    - SDWebImage
+
+SPEC CHECKSUMS:
+  MJRefresh: eeda70fbf0ad277f3178cef1cd0c3532591d6237
+  objectiveflickr: aed169dae1eb5a5550ca78f7efd7ccde2e4c26e5
+  SDWebImage: 4d5c027c935438f341ed33dbac53ff9f479922ca
+
+PODFILE CHECKSUM: 912944135943eb5d14dc0ceac4ea3c72c7539c50
+
+COCOAPODS: 1.9.0

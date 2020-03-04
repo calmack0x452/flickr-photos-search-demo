@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="15705" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="15706"/>
+        <capability name="collection view cell content view" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" reuseIdentifier="PhotosCollectionViewCell" id="Iam-Gh-udh" customClass="PhotosCollectionViewCell">
+            <rect key="frame" x="0.0" y="0.0" width="143" height="174"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <collectionViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" insetsLayoutMarginsFromSafeArea="NO" id="yob-2j-68d">
+                <rect key="frame" x="0.0" y="0.0" width="143" height="174"/>
+                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                <subviews>
+                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="ihr-Kn-M1v">
+                        <rect key="frame" x="5" y="5" width="133" height="133"/>
+                        <constraints>
+                            <constraint firstAttribute="width" constant="133" id="KoO-uV-7vm"/>
+                            <constraint firstAttribute="width" secondItem="ihr-Kn-M1v" secondAttribute="height" multiplier="1:1" id="tch-pf-L3E"/>
+                        </constraints>
+                    </imageView>
+                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="rtt-px-mzn">
+                        <rect key="frame" x="5" y="138" width="32" height="32"/>
+                        <constraints>
+                            <constraint firstAttribute="width" constant="32" id="W1r-Mv-n0f"/>
+                            <constraint firstAttribute="width" secondItem="rtt-px-mzn" secondAttribute="height" multiplier="1:1" id="owB-Nb-BEG"/>
+                        </constraints>
+                        <state key="normal" image="favorit.add"/>
+                    </button>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="dOF-3v-e4c">
+                        <rect key="frame" x="45" y="154" width="93" height="0.0"/>
+                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                        <nil key="textColor"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                </subviews>
+                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                <constraints>
+                    <constraint firstItem="ihr-Kn-M1v" firstAttribute="centerX" secondItem="yob-2j-68d" secondAttribute="centerX" id="22H-jh-93O"/>
+                    <constraint firstItem="dOF-3v-e4c" firstAttribute="trailing" secondItem="ihr-Kn-M1v" secondAttribute="trailing" id="HLe-ID-Xih"/>
+                    <constraint firstItem="dOF-3v-e4c" firstAttribute="leading" secondItem="rtt-px-mzn" secondAttribute="trailing" constant="8" symbolic="YES" id="Tas-SI-Btu"/>
+                    <constraint firstItem="rtt-px-mzn" firstAttribute="leading" secondItem="ihr-Kn-M1v" secondAttribute="leading" id="kDU-UN-ifc"/>
+                    <constraint firstItem="rtt-px-mzn" firstAttribute="top" secondItem="ihr-Kn-M1v" secondAttribute="bottom" id="ojr-7k-QkO"/>
+                    <constraint firstItem="dOF-3v-e4c" firstAttribute="centerY" secondItem="rtt-px-mzn" secondAttribute="centerY" id="thq-d3-oAu"/>
+                    <constraint firstItem="ihr-Kn-M1v" firstAttribute="top" secondItem="yob-2j-68d" secondAttribute="top" constant="5" id="wZ2-0W-psK"/>
+                </constraints>
+            </collectionViewCellContentView>
+            <size key="customSize" width="143" height="174"/>
+            <connections>
+                <outlet property="favoriteButton" destination="rtt-px-mzn" id="jqb-cn-r9N"/>
+                <outlet property="imageLabel" destination="dOF-3v-e4c" id="k3h-W5-kss"/>
+                <outlet property="imageView" destination="ihr-Kn-M1v" id="vI8-P1-Kae"/>
+                <outlet property="imageViewWidth" destination="KoO-uV-7vm" id="StM-3g-HfL"/>
+            </connections>
+            <point key="canvasLocation" x="197.82608695652175" y="95.758928571428569"/>
+        </collectionViewCell>
+    </objects>
+    <resources>
+        <image name="favorit.add" width="28" height="28"/>
+    </resources>
+</document>
